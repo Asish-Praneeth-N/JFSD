@@ -1,0 +1,78 @@
+/* src/Pages/Signup.css */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Needed for the pseudo-element positioning */
+    overflow: hidden; /* Ensures no overflow from the pseudo-element */
+}
+
+.signup-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../public/images/image5.png');
+    background-size: cover; /* Ensures the image covers the entire container */
+    z-index: 1; /* Position the image behind the signup box */
+}
+
+.signup-box {
+    position: relative; /* Positioning context for the signup box */
+    background: rgba(255, 255, 255, 0.2); /* Lightly tinted background for the glass effect */
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(15px); /* Enhanced blur for a stronger glass effect */
+    text-align: center;
+    z-index: 2; /* Ensure the signup box is above the background */
+}
+
+.glass-effect {
+    backdrop-filter: blur(15px); /* Apply stronger blur effect for glassiness */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.signup-box h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.signup-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-box input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3); /* Slightly translucent for glass effect */
+}
+
+.signup-box button {
+    padding: 12px;
+    background-color: #81b29a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-box p {
+    margin-top: 20px;
+    color: white;
+}
+
+.signup-box p a {
+    color: #f4d35e;
+    text-decoration: none;
+}

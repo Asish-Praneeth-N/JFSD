@@ -1,0 +1,32 @@
+/* src/components/LandingPage.css */
+.hero-section {
+    background-image: url('../../public/images/image5.png'); /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #f4d35e;
+    color: #365b3a;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

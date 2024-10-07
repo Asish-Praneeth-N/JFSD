@@ -1,0 +1,63 @@
+/* src/Pages/Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../public/images/image5.png');
+    background-size: cover; /* Ensures the image covers the entire container */
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Glass effect */
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.glass-effect {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.login-box button {
+    padding: 12px;
+    background-color: #81b29a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-box p {
+    margin-top: 20px;
+    color: white;
+}
+
+.login-box p a {
+    color: #f4d35e;
+    text-decoration: none;
+}
