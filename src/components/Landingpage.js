@@ -10,7 +10,7 @@ const LandingPage = () => {
         <div className="hero-content">
           <h2>"Cultivating a sustainable future"</h2>
           <Link to="/signup"> {/* Add Link to navigate to the signup page */}
-            <button className="cta-btn">Get Started</button>
+            <button className="cta-btn" style={{ fontWeight: 'normal' }}>Get Started</button>
           </Link>
         </div>
       </section>
