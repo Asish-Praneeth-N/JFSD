@@ -1,32 +1,92 @@
-/* src/components/LandingPage.css */
+/* Import the Cinzel font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background-color: #162718; /* Slightly darker background color */
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #2A3B20; /* Slightly darker navbar color */
+}
+
+/* Hero section */
 .hero-section {
-    background-image: url('../../public/images/image5.png'); /* Adjust the path as needed */
-    background-size: cover;
-    background-position: center;
+    background-color: #162718; /* Slightly darker background color */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    box-sizing: border-box;
 }
 
+/* Background image */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../public/images/image5.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Slightly reduced opacity */
+    mix-blend-mode: soft-light;
+    filter: brightness(0.7); /* Slightly darken the image */
+    z-index: 1;
+}
+
+/* Hero content */
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #f0f0f0; /* Slightly lighter text color for better contrast */
     padding: 50px;
+    background-color: rgba(29, 48, 31, 0.6); /* Semi-transparent dark background */
     border-radius: 10px;
-    color: white;
 }
 
 .hero-content h2 {
     font-size: 40px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+/* CTA button */
 .cta-btn {
-    background-color: #f4d35e;
-    color: #365b3a;
+    background-color: #C1BD61; /* Slightly darker button color */
+    color: #2A3B20; /* Darker text color for contrast */
     padding: 15px 30px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #D2B447; /* Slightly darker hover color */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
 }
