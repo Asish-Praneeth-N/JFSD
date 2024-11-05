@@ -1,0 +1,46 @@
+.community-container {
+    background-color: #162718;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 80px 20px 20px;
+    font-family: 'Cinzel', serif;
+  }
+  
+  h1, h2, h3 {
+    color: #51B26A;
+  }
+  
+  .community-section {
+    background-color: #1D301F;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum-list, .event-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .forum-list li, .event-list li {
+    background-color: #2A3B20;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .forum-list li:hover, .event-list li:hover {
+    background-color: #3D5229;
+  }
+  
+  .story-card {
+    background-color: #2A3B20;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .story-card p {
+    color: #c0c0c0;
+  }
